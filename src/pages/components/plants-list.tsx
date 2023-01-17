@@ -5,8 +5,8 @@ import {
 
 function createList(type: string) {
     return (
-        <Link href="/" key={`plant-${type}`}>
-            <div className="p-2 px-6 border-b w-full cursor-pointer hover:border-l-4 hover:border-l-blue-700">
+        <Link href={{ pathname: "/map", query: { type }}} key={`plant-${type}`}>
+            <div className="p-2 px-6 border-kbk w-full cursor-pointer hover:border-l-4 hover:border-l-blue-700">
                 {type}
             </div>
         </Link>
